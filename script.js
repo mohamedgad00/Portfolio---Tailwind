@@ -1,6 +1,6 @@
 const sideMenu = document.getElementById("sideMenu");
 const navBar = document.querySelector("nav");
-const navLinks = document.querySelector("nav");
+const navLinks = document.querySelector("nav ul");
 function openMenu() {
   sideMenu.style.transform = "translateX(-16rem)";
 }
@@ -9,7 +9,7 @@ function closeMenu() {
 }
 
 window.addEventListener("scroll", () => {
-  if (scrollY > 50) {
+  if (scrollY > 0) {
     navBar.classList.add(
       "bg-white",
       "bg-opacity-50",
